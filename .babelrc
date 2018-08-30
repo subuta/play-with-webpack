@@ -1,13 +1,16 @@
 {
   "presets": [
+    "@babel/preset-react",
     [
       "@babel/preset-env",
       {
-        "useBuiltIns": "entry"
+        "useBuiltIns": "entry",
+        "modules": false
       }
     ]
   ],
   "plugins": [
-    "@babel/plugin-proposal-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread",
+    "react-hot-loader/babel"
   ]
 }
